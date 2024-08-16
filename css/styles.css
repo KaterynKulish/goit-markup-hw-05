@@ -542,6 +542,7 @@ section {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 .label-modal {
   font-weight: 400;
@@ -584,6 +585,8 @@ section {
   fill: #4d5ae5;
 }
 .icon-input-modal::after {
+  content: '';
+  display: block;
   border: 1.25px solid #2e2f42;
   width: 18px;
   height: 0px;
