@@ -491,91 +491,97 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
-      <div class="modal">
-        <button type="botton" class="modal-close-btm">
-          <svg class="icon-close-modal" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black" />
-          </svg>
-        </button>
-        <p class="title-modal">Leave your contacts and we will call you back</p>
-
-        <div class="user-modal">
-          <label class="label-modal" for="user">Name</label>
-          <div class="input-modal">
-            <input
-              type="text"
-              class="input-form-modal"
-              name="user"
-              id="user"
-              autocomplete="off"
-            />
-            <svg class="icon-input-modal" width="18" height="18">
-              <use href="./images/icons.svg#icon-person-black"></use>
+    <form>
+      <div class="backdrop is-open">
+        <div class="modal">
+          <button type="button" class="modal-close-btm">
+            <svg class="icon-close-modal" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black" />
             </svg>
+          </button>
+          <p class="title-modal">
+            Leave your contacts and we will call you back
+          </p>
+          <div class="user-modal">
+            <label class="label-modal" for="user">Name</label>
+            <div class="input-modal">
+              <input
+                type="text"
+                class="input-form-modal"
+                name="user"
+                id="user"
+                autocomplete="off"
+              />
+              <svg class="icon-input-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
           </div>
-        </div>
+          <div class="user-modal">
+            <label class="label-modal" for="tell">Phone</label>
+            <div class="input-modal">
+              <input
+                type="tel"
+                class="input-form-modal"
+                name="tell"
+                id="tell"
+                autocomplete="off"
+              />
+              <svg class="icon-input-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="user-modal">
+            <label class="label-modal" for="email">Email</label>
+            <div class="input-modal">
+              <input
+                type="email"
+                class="input-form-modal"
+                name="email"
+                id="email"
+                autocomplete="off"
+              />
+              <svg class="icon-input-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="user-modal">
+            <label class="label-modal" for="comment">Email</label>
+            <div class="input-modal">
+              <textarea
+                class="textarea-input-form-modal"
+                name="comment"
+                id="comment"
+                autocomplete="off"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
 
-        <div class="user-modal">
-          <label class="label-modal" for="tell">Phone</label>
-          <div class="input-modal">
-            <input
-              type="tel"
-              class="input-form-modal"
-              name="tell"
-              id="tell"
-              autocomplete="off"
-            />
-            <svg class="icon-input-modal" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone-black"></use>
-            </svg>
+          <div class="user-modal">
+            <div class="checkbox-input-modal">
+              <input
+                type="checkbox"
+                class="checkbox-input visually-hidden"
+                name="checkbox"
+                id="chekbox"
+              />
+              <label class="custom-label-checkbox" for="chekbox">
+                <span class="custom-checkbox">
+                  <svg class="icon-custom-checkbox" width="10" height="8">
+                    <use href="images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="" class="text-blue">Privacy Policy</a>
+              </label>
+            </div>
           </div>
-        </div>
-
-        <div class="user-modal">
-          <label class="label-modal" for="email">Email</label>
-          <div class="input-modal">
-            <input
-              type="email"
-              class="input-form-modal"
-              name="email"
-              id="email"
-              autocomplete="off"
-            />
-            <svg class="icon-input-modal" width="18" height="24">
-              <use href="./images/icons.svg#icon-email-black"></use>
-            </svg>
-          </div>
-        </div>
-
-        <div class="user-modal">
-          <label class="label-modal" for="comment">Email</label>
-          <div class="input-modal">
-            <textarea
-              class="textarea-input-form-modal"
-              name="comment"
-              id="comment"
-              autocomplete="off"
-              placeholder="Text input"
-            >
-            </textarea>
-          </div>
-        </div>
-
-        <div class="user-modal">
-          <div class="checkbox-input-modal">
-            <input
-              type="checkbox"
-              class="checkbox-input-form-modal"
-              name="checkbox"
-            />
-            <p class="text-checkbox-input-form">
-              I accept the terms and conditions of the
-              <a href="" class="text-blue">Privacy Policy</a>
-            </p>
-          </div>
+          <button class="hero-button" type="submit">Send</button>
         </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
